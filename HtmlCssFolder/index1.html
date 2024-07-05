@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms and inputs</title>
+</head>
+<body>
+    <form action="">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname"
+        placeholder="Enter your first name"/
+        required>
+        
+        <br />
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="=lname"
+        placeholder="Enter your last name"
+        required />
+        <br />
+        <label for="lname">Email</label>
+        <input type="email" id="email" name="=email"
+        placeholder="Enter your email"
+        required />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+        placeholder="Enter your password"
+        required />
+        <br />
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age"
+        placeholder="Enter your age"
+        required 
+        min="0"
+        max="70"/>
+
+
+        <label for="range">Range:</label>
+        <input
+        type="range"
+        id="range"
+        name="range"
+        min="0"
+        max="100"
+        step="1"
+        value="50">
+
+        <br />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
+
+        <br />
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" />
+
+        <br />
+
+        <label for="datetime-local">Datetime Local:</label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local" />
+        
+        <br />
+
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month" />
+
+        <br />
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week" />
+
+        <br />
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" />
+
+        <br />
+
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="tel" />
+
+        <br />
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"
+        value="#000000" />
+
+        <br />
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" />
+
+        <br />
+
+        <label>Female:</label>
+        <input type="radio" id="radio" name="radio" value="F"/>
+        <label>Male:</label>
+        <input type="radio" id="radio" name="radio" value="M"/>
+        <br />
+
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file">
+
+        <br />
+
+
+        <input type="reset">
+        <br />
+        <input type="submit">
+
+        <br />
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="40" rows="10"></textarea>
+
+        <br />
+
+        <label for="message">choose a color:</label>
+
+        <select name="colors" id="colors">
+            <option value="red">Red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
+        </select>
+
+        <br />
+        <label for="colors">choose a color:</label>
+        <input type="text" list="color-options" name="colors" />
+        <datalist id="color-options">
+            <option value="red">Red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
+        </datalist>
+
+        <br />
+        <label for="fruits">choose a fruit:</label>
+        <select name="fruits" id="fruits">
+
+        <optgroup label="Citrus">
+            <option value="orange">Orange</option>
+            <option value="lemon">Lemon</option>
+            <option value="lime">Lime</option>
+        </optgroup>
+        <optgroup label="Berries">
+            <option value="strawberry">Strawberry</option>
+            <option value="blueberry">Blueberry</option>
+        </optgroup>
+
+        <option value="apple">Apple</option>
+    </select>
+    </form>
+</body>
+</html>

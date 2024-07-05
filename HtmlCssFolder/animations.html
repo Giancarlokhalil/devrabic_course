@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions and Animations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            animation: moveBox 3s forwards infinite alternate 5s;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes moveBox {
+
+            20% {
+                background-color: red;
+            }
+
+            70% {
+                transform: scale(2);
+            }
+
+            100% {
+                background-color: red;
+                transform: scale(2) translateX(50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
